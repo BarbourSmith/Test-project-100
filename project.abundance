@@ -14,14 +14,19 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1734716725942,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1734716759213
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.23677248677248677,
-            "y": 0.5236768802228412,
+            "x": 0.3664021164021164,
+            "y": 0.67966573816156,
             "uniqueID": 1734716728602,
             "ioValues": [
                 {
@@ -34,8 +39,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.3386243386243386,
-            "y": 0.36768802228412256,
+            "x": 0.48148148148148145,
+            "y": 0.32869080779944293,
             "uniqueID": 1734716733731,
             "ioValues": [
                 {
@@ -52,8 +57,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.41931216931216936,
-            "y": 0.6128133704735376,
+            "x": 0.5674603174603174,
+            "y": 0.6601671309192201,
             "uniqueID": 1734716750031,
             "ioValues": [
                 {
@@ -70,7 +75,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 7
+                    "ioValue": 6
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -78,8 +83,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.5687830687830687,
-            "y": 0.4596100278551532,
+            "x": 0.6970899470899471,
+            "y": 0.4428969359331476,
             "uniqueID": 1734716759213,
             "ioValues": [
                 {
@@ -122,10 +127,17 @@
             "ap2Primary": false,
             "ap1ID": 1734716750031,
             "ap2ID": 1734716759213
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1734716759213,
+            "ap2ID": 1734716725942
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
