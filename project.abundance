@@ -1,14 +1,129 @@
 {
     "atomType": "Molecule",
-    "name": "Test project 100",
+    "name": "Test-project-100",
     "x": 0,
     "y": 0,
     "uniqueID": 1734716717179,
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1734716725942,
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.23677248677248677,
+            "y": 0.5236768802228412,
+            "uniqueID": 1734716728602,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.3386243386243386,
+            "y": 0.36768802228412256,
+            "uniqueID": 1734716733731,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734716728602
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.41931216931216936,
+            "y": 0.6128133704735376,
+            "uniqueID": 1734716750031,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734716733731
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 7
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.5687830687830687,
+            "y": 0.4596100278551532,
+            "uniqueID": 1734716759213,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": 1734716750031
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": 1734716733731
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1734716728602,
+            "ap2ID": 1734716733731
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1734716733731,
+            "ap2ID": 1734716750031
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1734716733731,
+            "ap2ID": 1734716759213
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1734716750031,
+            "ap2ID": 1734716759213
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
