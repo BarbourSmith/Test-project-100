@@ -101,17 +101,13 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.7132680320569902,
-            "y": 0.6350974930362118,
+            "x": 0.7105966162065894,
+            "y": 0.637883008356546,
             "uniqueID": 1742582865093,
             "ioValues": [
                 {
                     "name": "Shape 1",
                     "ioValue": 1734716750031
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1734716733731
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -138,13 +134,6 @@
             "ap2Primary": false,
             "ap1ID": 1734716733731,
             "ap2ID": 1734716759213
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap2Primary": false,
-            "ap1ID": 1734716733731,
-            "ap2ID": 1742582865093
         },
         {
             "ap1Name": "geometry",
