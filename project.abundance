@@ -88,12 +88,12 @@
             "uniqueID": 1734716759213,
             "ioValues": [
                 {
-                    "name": "geometry2",
-                    "ioValue": 1734716750031
-                },
-                {
                     "name": "geometry1",
                     "ioValue": 1734716733731
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": 1734716750031
                 }
             ],
             "description": "Subtracts shape two from shape one."
