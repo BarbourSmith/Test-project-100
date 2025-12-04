@@ -1,175 +1,240 @@
 {
-    "atomType": "Molecule",
-    "name": "Test-project-100",
-    "x": 0,
-    "y": 0,
-    "uniqueID": 1734716717179,
-    "ioValues": [],
-    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-    "topLevel": true,
-    "allAtoms": [
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": 1734716717179,
+  "name": "Test-project-100",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": 1734716725942
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.13425925925925927,
+      "y": 0.2924791086350975,
+      "uniqueID": 1734716728602,
+      "ioValues": [
         {
-            "atomType": "Output",
-            "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
-            "uniqueID": 1734716725942,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1734716759213
-                }
-            ],
-            "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.13425925925925927,
-            "y": 0.2924791086350975,
-            "uniqueID": 1734716728602,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 5
-                }
-            ],
-            "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.289021164021164,
-            "y": 0.20612813370473537,
-            "uniqueID": 1734716733731,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1734716728602
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.38756613756613756,
-            "y": 0.7688022284122563,
-            "uniqueID": 1734716750031,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1734716733731
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 2
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 6
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Difference",
-            "name": "Difference",
-            "x": 0.6990740740740741,
-            "y": 0.22841225626740946,
-            "uniqueID": 1734716759213,
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": 1734716733731
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": 1734716750031
-                }
-            ],
-            "description": "Subtracts shape two from shape one."
-        },
-        {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.7105966162065894,
-            "y": 0.637883008356546,
-            "uniqueID": 1742582865093,
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1734716750031
-                }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-        },
-        {
-            "atomType": "Readme",
-            "name": "README",
-            "x": 0.21869782971619364,
-            "y": 0.6462395543175488,
-            "uniqueID": "3ccf66e2-59eb-4168-9f8b-9981e9ed426b",
-            "ioValues": [],
-            "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
-            "readmeText": "This is some test readme text",
-            "global": true
+          "name": "diameter",
+          "ioValue": 5
         }
-    ],
-    "allConnectors": [
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.289021164021164,
+      "y": 0.20612813370473537,
+      "uniqueID": 1734716733731,
+      "ioValues": [
         {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1734716728602,
-            "ap2ID": 1734716733731
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1734716733731,
-            "ap2ID": 1734716750031
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry1",
-            "ap2Primary": false,
-            "ap1ID": 1734716733731,
-            "ap2ID": 1734716759213
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
-            "ap1ID": 1734716750031,
-            "ap2ID": 1734716759213
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap2Primary": false,
-            "ap1ID": 1734716750031,
-            "ap2ID": 1742582865093
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1734716759213,
-            "ap2ID": 1734716725942
+          "name": "height",
+          "ioValue": 10
         }
-    ],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "compiledBom": [],
-    "filetypeVersion": 1
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.38756613756613756,
+      "y": 0.7688022284122563,
+      "uniqueID": 1734716750031,
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 2
+        },
+        {
+          "name": "zDist",
+          "ioValue": 6
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.6990740740740741,
+      "y": 0.22841225626740946,
+      "uniqueID": 1734716759213
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.7105966162065894,
+      "y": 0.637883008356546,
+      "uniqueID": 1742582865093,
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Readme",
+      "x": 0.21869782971619364,
+      "y": 0.6462395543175488,
+      "uniqueID": "3ccf66e2-59eb-4168-9f8b-9981e9ed426b",
+      "name": "README",
+      "readMeText": "Readme text here",
+      "global": true
+    },
+    {
+      "atomType": "Text",
+      "x": 0.53505291005291,
+      "y": 0.871866295264624,
+      "uniqueID": "id-21",
+      "ioValues": [
+        {
+          "name": "Font Size",
+          "ioValue": 10
+        },
+        {
+          "name": "Text",
+          "ioValue": "Lorem Ipsum",
+          "currentEquation": "Lorem Ipsum"
+        }
+      ],
+      "fontFamily": "ANONYMOUSPRO",
+      "selectedFontIndex": 3
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.7497969130787977,
+      "y": 0.9025069637883008,
+      "uniqueID": "id-34",
+      "name": "Scale",
+      "ioValues": [
+        {
+          "name": "Scale Factor",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-30"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-31",
+          "name": "Geometry",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-32",
+          "name": "Scale Factor",
+          "type": "number"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.4226190476190476,
+          "y": 0.25139664804469275,
+          "uniqueID": "id-33",
+          "ioValues": [
+            {
+              "name": "scaleFactor",
+              "ioValue": 10
+            }
+          ],
+          "codeVersion": 1,
+          "code": " \n      //Inputs:[inputShape, scaleFactor]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n\n      let scaledShape = await Scale(inputShape, scaleFactor);\n      \n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [scaledShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      return shape1\n      \n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "inputShape",
+          "ap1ID": "id-31",
+          "ap2ID": "id-33"
+        },
+        {
+          "ap2Name": "scaleFactor",
+          "ap1ID": "id-32",
+          "ap2ID": "id-33"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-33",
+          "ap2ID": "id-30"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2025-12-04T15:47:14.657Z",
+        "privateRepo": false,
+        "repoName": "Scale",
+        "dateCreated": "2025-06-26T17:06:11Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "4b6bc40a-44a9-438a-9ed9-ba4910815d8d",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Scale",
+        "topics": [],
+        "parentRepo": null,
+        "forks": 1,
+        "dateModified": "739428",
+        "ranking": 3.2,
+        "searchField": "scale barboursmith scales the input 2d or 3d geometry by the scale factor ",
+        "owner": "BarbourSmith",
+        "description": "Scales the input 2D or 3D geometry by the scale factor",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1734716728602,
+      "ap2ID": 1734716733731
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1734716733731,
+      "ap2ID": 1734716750031
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": 1734716733731,
+      "ap2ID": 1734716759213
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": 1734716750031,
+      "ap2ID": 1734716759213
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": 1734716750031,
+      "ap2ID": 1742582865093
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": 1734716759213,
+      "ap2ID": 1734716725942
+    },
+    {
+      "ap2Name": "Geometry",
+      "ap1ID": "id-21",
+      "ap2ID": "id-34"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
