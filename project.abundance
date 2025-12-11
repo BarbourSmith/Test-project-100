@@ -195,6 +195,38 @@
       },
       "unitsKey": "Unitless",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7976190476190476,
+      "y": 0.5598885793871866,
+      "uniqueID": "id-69",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 5,
+          "currentEquation": "5"
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Test-project-100",
+          "currentEquation": "Test-project-100"
+        }
+      ],
+      "partName": "Test-project-100",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -227,6 +259,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": 1734716759213,
       "ap2ID": 1734716725942
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1734716759213,
+      "ap2ID": "id-69"
     },
     {
       "ap2Name": "Geometry",
