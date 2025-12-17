@@ -76,8 +76,8 @@
     },
     {
       "atomType": "Readme",
-      "x": 0.21869782971619364,
-      "y": 0.6462395543175488,
+      "x": 0.22156084656084654,
+      "y": 0.6713091922005571,
       "uniqueID": "3ccf66e2-59eb-4168-9f8b-9981e9ed426b",
       "name": "README",
       "readMeText": "Readme text here",
@@ -103,9 +103,40 @@
       "selectedFontIndex": 3
     },
     {
+      "atomType": "Gcode",
+      "x": 0.7976190476190476,
+      "y": 0.5598885793871866,
+      "uniqueID": "id-69",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 5
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Test-project-100",
+          "currentEquation": "Test-project-100"
+        }
+      ],
+      "partName": "Test-project-100",
+      "sortDirection": "Left"
+    },
+    {
       "atomType": "GitHubMolecule",
-      "x": 0.7497969130787977,
-      "y": 0.9025069637883008,
+      "x": 0.7546296296296297,
+      "y": 0.9136490250696379,
       "uniqueID": "id-34",
       "name": "Scale",
       "ioValues": [
@@ -197,36 +228,58 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Gcode",
-      "x": 0.7976190476190476,
-      "y": 0.5598885793871866,
-      "uniqueID": "id-69",
+      "atomType": "Rectangle",
+      "x": 0.36706349206349204,
+      "y": 0.41782729805013924,
+      "uniqueID": "id-111",
       "ioValues": [
         {
-          "name": "Tool Size",
-          "ioValue": 6.35
+          "name": "x length",
+          "ioValue": 10
         },
         {
-          "name": "Passes",
-          "ioValue": 1
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.46706349206349207,
+      "y": 0.41782729805013924,
+      "uniqueID": "id-115",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.5363756613756614,
+      "y": 0.37604456824512533,
+      "uniqueID": "id-119",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
         },
         {
-          "name": "Speed",
-          "ioValue": 1500
-        },
-        {
-          "name": "Cut Through",
-          "ioValue": 5,
-          "currentEquation": "5"
+          "name": "Resolution (dpi)",
+          "ioValue": 96
         },
         {
           "name": "Part Name",
-          "ioValue": "Test-project-100",
-          "currentEquation": "Test-project-100"
+          "ioValue": "Test cube",
+          "currentEquation": "Test cube"
         }
       ],
-      "partName": "Test-project-100",
-      "sortDirection": "Left"
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Test cube"
     }
   ],
   "allConnectors": [
@@ -269,6 +322,16 @@
       "ap2Name": "Geometry",
       "ap1ID": "id-21",
       "ap2ID": "id-34"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-111",
+      "ap2ID": "id-115"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-115",
+      "ap2ID": "id-119"
     }
   ],
   "unitsKey": "MM",
