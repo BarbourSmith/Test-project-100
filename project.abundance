@@ -134,6 +134,60 @@
       "sortDirection": "Left"
     },
     {
+      "atomType": "Rectangle",
+      "x": 0.36706349206349204,
+      "y": 0.41782729805013924,
+      "uniqueID": "id-111",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.46706349206349207,
+      "y": 0.41782729805013924,
+      "uniqueID": "id-115",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.5363756613756614,
+      "y": 0.37604456824512533,
+      "uniqueID": "id-119",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Test cube",
+          "currentEquation": "Test cube"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Test cube"
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.7546296296296297,
       "y": 0.9136490250696379,
@@ -228,58 +282,222 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Rectangle",
-      "x": 0.36706349206349204,
-      "y": 0.41782729805013924,
-      "uniqueID": "id-111",
-      "ioValues": [
+      "atomType": "Molecule",
+      "x": 0.09193121693121693,
+      "y": 0.7186629526462396,
+      "uniqueID": "id-171",
+      "name": "Test",
+      "topLevel": false,
+      "allAtoms": [
         {
-          "name": "x length",
-          "ioValue": 10
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-173"
         },
         {
-          "name": "y length",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.46706349206349207,
-      "y": 0.41782729805013924,
-      "uniqueID": "id-115",
-      "ioValues": [
-        {
-          "name": "height",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Export",
-      "x": 0.5363756613756614,
-      "y": 0.37604456824512533,
-      "uniqueID": "id-119",
-      "ioValues": [
-        {
-          "name": "File Type",
-          "ioValue": "STL",
-          "currentEquation": "STL"
+          "atomType": "Molecule",
+          "x": 0.046957671957671955,
+          "y": 0.5403899721448467,
+          "uniqueID": "id-175",
+          "name": "Basic Shape",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-177"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.167989417989418,
+              "y": 0.6295264623955432,
+              "uniqueID": "id-211",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.267989417989418,
+              "y": 0.6295264623955432,
+              "uniqueID": "id-214",
+              "ioValues": [
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-211",
+              "ap2ID": "id-214"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-214",
+              "ap2ID": "id-177"
+            }
+          ],
+          "fileTypeVersion": 1
         },
         {
-          "name": "Resolution (dpi)",
-          "ioValue": 96
+          "atomType": "Molecule",
+          "x": 0.2003968253968254,
+          "y": 0.44846796657381616,
+          "uniqueID": "id-179",
+          "name": "Layer 1 Customizations",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-181"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-202",
+              "name": "input",
+              "type": "geometry"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-202",
+              "ap2ID": "id-181"
+            }
+          ],
+          "fileTypeVersion": 1
         },
         {
-          "name": "Part Name",
-          "ioValue": "Test cube",
-          "currentEquation": "Test cube"
+          "atomType": "Molecule",
+          "x": 0.20304232804232802,
+          "y": 0.22005571030640667,
+          "uniqueID": "id-187",
+          "name": "Layer 1 Customizations",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-188"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-199",
+              "name": "input",
+              "type": "geometry"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-199",
+              "ap2ID": "id-188"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.20105820105820105,
+          "y": 0.7353760445682451,
+          "uniqueID": "id-193",
+          "name": "Layer 1 Customizations",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-194"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-205",
+              "name": "input",
+              "type": "geometry"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-205",
+              "ap2ID": "id-194"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.3948412698412699,
+          "y": 0.4874651810584958,
+          "uniqueID": "id-208",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            }
+          ]
         }
       ],
-      "type": null,
-      "resolution": 96,
-      "importIndex": 0,
-      "partName": "Test cube"
+      "allConnectors": [
+        {
+          "ap2Name": "input",
+          "ap1ID": "id-175",
+          "ap2ID": "id-187"
+        },
+        {
+          "ap2Name": "input",
+          "ap1ID": "id-175",
+          "ap2ID": "id-179"
+        },
+        {
+          "ap2Name": "input",
+          "ap1ID": "id-175",
+          "ap2ID": "id-193"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-179",
+          "ap2ID": "id-208"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-187",
+          "ap2ID": "id-208"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-193",
+          "ap2ID": "id-208"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
