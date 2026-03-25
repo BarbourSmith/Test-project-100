@@ -72,8 +72,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6990740740740741,
-      "y": 0.22841225626740946,
+      "x": 0.5687830687830687,
+      "y": 0.24233983286908078,
       "uniqueID": 1734716759213,
       "ioValues": [
         {
@@ -100,6 +100,60 @@
       ],
       "readMeText": "Readme text here",
       "global": true
+    },
+    {
+      "atomType": "Code",
+      "x": 0.6759259259259259,
+      "y": 0.5682451253481894,
+      "uniqueID": "id-302",
+      "ioValues": [
+        {
+          "name": "shape",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "codeVersion": 1,
+      "code": "const Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n];\n\nreturn await AssemblyMap(library[shape], async (leaf) => {\n  let solid = leaf.geometry[0];\n\n  // Find faces lying in the XY plane at Z=0\n  let finder = new replicad.FaceFinder().inPlane(\"XY\", 0);\n  let faces = finder.applyFilter(solid);\n\n  if (faces.length === 0) {\n    throw new Error(\"Shape has no face in the XY plane at Z=0\");\n  }\n\n  // Convert the face to a 2D Drawing that can be extruded\n  let drawing = replicad.drawFaceOutline(faces[0]);\n\n  return {\n    ...leaf,\n    geometry: [drawing],\n    dimension: \"2D\",\n  };\n});\n"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.7936507936507936,
+      "y": 0.6601671309192201,
+      "uniqueID": "id-307",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5641534391534392,
+      "y": 0.7242339832869081,
+      "uniqueID": "id-311",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -10
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -127,6 +181,21 @@
       "ap2Name": "number or geometry",
       "ap1ID": 1734716759213,
       "ap2ID": 1734716725942
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1734716759213,
+      "ap2ID": "id-311"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-302",
+      "ap2ID": "id-307"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-311",
+      "ap2ID": "id-302"
     }
   ],
   "unitsKey": "MM",
