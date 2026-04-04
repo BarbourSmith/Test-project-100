@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "Dia",
-      "ioValue": 13
+      "ioValue": 17
     }
   ],
   "topLevel": true,
@@ -32,7 +32,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 13
+          "ioValue": 17
         }
       ]
     },
